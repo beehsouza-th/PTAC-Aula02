@@ -2,7 +2,7 @@ export default function Footer(){
 
     return(
         <footer>
-        <p> Desenvolvedor (Brenda Thereza) </p>
+        <h2> @soueubrendathereza ✉︎ </h2>
         </footer>
     );
 }
