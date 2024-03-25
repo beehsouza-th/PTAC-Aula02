@@ -1,6 +1,6 @@
 header{
-  height: 100px;
-  background-color:rgb(215, 209, 121);
+  height: 90px;
+  background-color:rgb(2, 5, 88);
   text-align: center;
   padding: 30px ;
   margin: -8px ;
@@ -10,8 +10,8 @@ header{
 }
 
 footer{
-height: 100px;
-background-color: rgb(215, 209, 121);
+height: 90px;
+background-color:rgb(2, 5, 88);
 text-align:center;
 padding: 30px ;
 margin: -8px ;
@@ -23,11 +23,31 @@ text-align:left;
 
 
 h1{
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: 45px;;
-    color: rgb(162, 142, 216);
+    font-style: italic;
+    letter-spacing: 10px;
+    font-size: 47px;;
+    color: rgb(226, 12, 12);
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+button{
+background-color: rgb(241, 236, 79);
+border-radius: 10px;
+}
+  
+p{
+font-style: italic;
+color: goldenrod;
+font-size: 25px ;
+}
+
+h2{
+  color: brown;
 }
 
 
-
-  

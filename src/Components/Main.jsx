@@ -1,20 +1,24 @@
 import { useState } from "react";
 
  export default function Main(){
-    const [nome, setNome] = useState("");  //primeira:acessa  setNome:modifica
+    const [nome, setNome] = useState("");  
     const [telefone, setTelefone] = useState("");
 
 return(
 <main>
-    <p> seu nome:</p>
+    
     <form>
-        <button>
-        </button>
-    <input type ="text"name="nome-conato"id="nome" value= {nome} onChange={  (event)  => setNome(event.target.value)}/>
+    <p> your nome:</p>
+    <input type ="text"name="contato-nome"id="nome" value= {nome} onChange={  (event)  => setNome(event.target.value)}/>
      {nome}
-<p>seu telefone:</p>
-     <input type ="tel"name="nome-conato"id="telefone"value= {telefone} onChange={  (event)  => setTelefone(event.target.value)}/>
+
+<p>your telefone:</p>
+     <input type ="tel"name="contato-nome"id="telefone"value= {telefone} onChange={  (event)  => setTelefone(event.target.value)}/>
      {telefone}
+
+     <button id= "my-botao">
+            salvar
+            </button>
     
      </form>
 </main>
