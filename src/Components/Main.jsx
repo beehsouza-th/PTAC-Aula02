@@ -1,27 +1,57 @@
-import { useState } from "react";
+ import { useState } from "react";
+     export default function Main(){
+     const [nome, setNome] = useState(""); 
+     const [telefone, setTelefone] = useState(); 
+     const [listaContatos, setContatos] = useState ([]);
 
- export default function Main(){
-    const [nome, setNome] = useState("");  
-    const [telefone, setTelefone] = useState("");
 
+     const registrar = () => {
+     alert("deu certo");
+     }
 return(
 <main>
-    
-    <form>
-    <p> your nome:</p>
-    <input type ="text"name="contato-nome"id="nome" value= {nome} onChange={  (event)  => setNome(event.target.value)}/>
+<form> 
+
+     <label htmlFor ="nome"> Nome:</label>
+     <input type ="text"name="contato-nome"id="nome" value= {nome} onChange={  (event)  => setNome(event.target.value)}/>
      {nome}
 
-<p>your telefone:</p>
-     <input type ="tel"name="contato-nome"id="telefone"value= {telefone} onChange={  (event)  => setTelefone(event.target.value)}/>
-     {telefone}
+     <label htmlFor ="telefone"> Telefone:</label>
+<input type ="tel"name="contato-nome"id="telefone"value= {telefone} onChange={  (event)  => setTelefone(event.target.value)}/>
+{telefone}
 
-     <button id= "my-botao">
-            salvar
-            </button>
-    
-     </form>
+     <button id="bot"> Salvar </button>
+</form>
 </main>
 
-);
+);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -3,12 +3,11 @@ import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import "./globals.css";
 export default function App(){
- return(
+return(
     <div>
     <Header/>
     <Main/>
     <Footer/>
-     
     </div>
   );
 }
