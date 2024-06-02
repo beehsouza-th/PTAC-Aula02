@@ -1,28 +1,28 @@
  import { useState } from "react";
 
-export default function Main() {
+ export default function Main() {
      const [nome, setNome] = useState(""); 
      const [telefone, setTelefone] = useState(0);
      const [email, setEmail] = useState(""); 
      const [listaContatos, setListaContatos] = useState([]);
 
 
-     const registrar = (event) => {
+     const registrar = (event) =>{
      event.preventDefault();  //remover  
      alert("aamewm");
 
      setListaContatos([...listaContatos,
-     {
+      {
           nomeSalvo: nome,
           telefoneSalvo: telefone,
           emailSalvo: email
-     }
-     ]);
+      }
+      ]);
    
-};
+      };
      console.table(listaContatos); //adicionar
 
-return(
+ return(
  <main>
     <form>
  <div>
@@ -42,8 +42,8 @@ return(
      </div>
      </form>
     
-</main>
-);
+ </main>
+ );
 }
 
 
